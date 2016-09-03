@@ -1,0 +1,69 @@
+<!-- ESEMPIO CREATO DA devnews.it, sei pregato di utilizzare questo esempio nell amaniere che vuoi,a cnhe per uso commerciale
+ti chiedo in cambio solamente di creditarmi con un backlink dal tuo sito puntanto al link https://devnews.it
+oppure condividendo il mio post su facebook con il link  -->
+
+<style type="text/css">
+	.box{
+	position: relative; /*IMPORTANTE! per essere posizionato in qualsiasi parte della pagina*/
+	height: 518px; /* altezza dell'immagine di sfondo*/ 
+	width: 100%;
+	max-width: 1000px;
+	background-image: url("http://images.devnews.it/tutorials/parallax/sfondo.png");
+	background-attachment: fixed; /*per bloccare lo sfondo su scroll*/
+	background-clip: content-box; /*per posizionare lo sfondo all'angolo del .box*/
+	background-repeat: no-repeat;
+	overflow: hidden; /*per nascodere l'ala e la scritta quando fuoriescono dal .box*/
+    background-size: 100% 100%;
+    margin-bottom: 1000px; /*ATTENZIONE QUESTO SERVE SOLO PER DIMOSTRAZIONE, RIMUOVERE PER UTILIZZARE*/
+}
+
+.scritta{
+	background-image: url("http://images.devnews.it/tutorials/parallax/testo.png");
+	width: 100%;
+	max-width: 1000px;
+	height: 518px;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+	position: absolute;
+	z-index: 2; /*per portare la scritta in primo piano*/
+	top: -90px; /*CAMBIARE PER SPOSTARE LA POSIZIONE VERTICALE DELLA SCRITTA*/
+	background-size: 100% 100%;
+}
+
+.ala{
+	background-image: url("http://images.devnews.it/tutorials/parallax/aereo.png");
+	height: 518px;
+	position: absolute;
+	max-width: 1000px;
+	background-repeat: no-repeat;
+	background-clip: content-box;
+	width: 100%;
+	top: -70px;
+	z-index: 1;
+	background-size: 100% 100%;
+}
+
+@media (max-width: 750px) {
+	.box{
+		background-size: 1300px 800px;
+	}
+}
+
+</style>
+	<div class="box">
+		<div id ="ala" class="ala"></div>
+		<div id = "scritta" class="scritta"></div>
+	</header>
+
+<script type="text/javascript">
+window.addEventListener('scroll', function(){ 
+	var scrollVerticale = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	var scritta = document.getElementById("scritta"), cssScritta = scritta.style;
+	cssScritta.transform = "translate(0px, " + (scrollVerticale / 10) + "%)";
+	var ala = document.getElementById("ala"), cssAla = ala.style;
+	cssAla.transform = "translate(0px, " + (scrollVerticale / 6) + "%)";
+
+}, true)
+
+
+</script>
