@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet tutorial italiano</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" />
+</head>
+<body>
+	<div style="height: 650px;" id="mappa"></div>
+	<script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+	<script type="text/javascript">
+		var vulcani = [{lat: 37.753122, long: 14.994120},
+				   	   {lat: 38.793246, long: 15.215292},
+				       {lat: 40.822345, long: 14.428906}];
+
+		var mappa = new L.Map('mappa', {
+	    	center: new L.LatLng(41.879156, 12.457727),
+	    	zoom: 6,
+	    	layers: new L.TileLayer('https://api.mapbox.com/styles/v1/pierpaolo94/cisx2xjrl002g2yo0lpahcequ/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGllcnBhb2xvOTQiLCJhIjoiY2lzeDJoMTVxMDAyazJ6bzNtOGp6YnluYyJ9.MP_ywiomvzxl3k-Bv22vTQ')
+		});
+		for(var i in vulcani){
+			var vulcano = L.circle([vulcani[i].lat, vulcani[i].long], 10000, {
+	    		color: 'red',
+	    		fillColor: '#f03',
+	    		fillOpacity: 0.5
+			}).addTo(mappa);
+		}
+
+	</script>
+</body>
+</html>
