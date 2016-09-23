@@ -1,0 +1,41 @@
+body{
+	background: #eee;
+	padding:0;
+	margin: 0;
+}
+
+#galleria{
+	text-align: center;
+	width: 100%;
+}
+
+.immagine{
+	display: inline-block;
+	width: 22%;
+	margin: 10px 1%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.preview{
+	width: 100%;
+}
+
+@media (max-width: 480px) {
+	.immagine{
+		width: 98%;
+		margin: 1%;
+	}
+}
+
+@media (max-width: 720px) and (min-width: 480px){
+	.immagine{
+		width: 47%;
+	}
+}
+
+@media (max-width: 1020px) and (min-width: 720px){
+	.immagine{
+		width: 30%;
+	}
+}
