@@ -1,0 +1,41 @@
+
+#galleria{
+	text-align: center;
+	width: 100%;
+}
+
+.immagine{
+	background: url("https://images.devnews.it/tutorials/mongodb-mac/thumb-windows.png");
+	background-size: 120%;
+	display: inline-block;
+	width: 22%;
+	height: 150px;
+	margin: 10px 1%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+}
+
+.immagine:hover{
+	cursor: pointer;
+	background-size: 100%;
+}
+
+@media (max-width: 480px) {
+	.immagine{
+		width: 98%;
+		margin: 1%;
+	}
+}
+
+@media (max-width: 720px) and (min-width: 480px){
+	.immagine{
+		width: 47%;
+	}
+}
+
+@media (max-width: 1020px) and (min-width: 720px){
+	.immagine{
+		width: 30%;
+	}
+}
