@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Test app per Chrome",
+    "description": "Descrizione per la nostra nuova app chrome",
+    "version": "0.0.0.1",
+
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "icons": {
+    }
+}
