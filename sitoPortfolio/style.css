@@ -1,0 +1,47 @@
+/*Per riempire l'intera finesta del browser, togliamo qualsiasi tipo di marigne*/
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif; /*specifichiamo quale font utilizzare*/
+}
+
+.clear{
+    clear: both; /* per annullare gli effetti dei float */
+}
+
+.container{
+    max-width: 80%; /* la massima larghezza del div sarà 80% dello schermo */
+    margin: 0 auto; /* sopra e sotto: 0 margine. destra e sinistra: auto (centrato) */
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    padding: 40px 0;
+    background: #2d3e50;
+    color: #fff;
+    height: 40px;
+}
+
+#logo{
+    float: left;
+    line-height: 40px;
+}
+
+nav ul {
+    line-height: 40px;
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+.nav-item a:hover{
+    color: #18bb9c;
+}
+
+.nav-item{
+    display: inline-block;
+    margin: 0 15px;
+}

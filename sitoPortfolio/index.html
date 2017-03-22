@@ -1,0 +1,45 @@
+<!-- dichiariamo che stiamo utilizzando HTML5 -->
+<!DOCTYPE html>
+<html>
+    <!-- all'interno del tag head, inseriamo le informazioni relative al sito come
+    titolo, font, e file CSS -->
+    <head>
+        <!-- titolo della pagina -->
+        <title>Portfolio Artista</title>
+        <!-- importiamo la fot 'Lato' da Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <!-- link al nostro file di stile. Path al file è dato da href -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <!-- inizio corpo principale del sito -->
+    <body>
+        <!-- tag di navigazione -->
+        <nav>
+            <!-- Utilizziamo container per centrare il nostro contenuto e per avere uno stacco dai bordi
+            Vedere il selettore .container nel file style.css -->
+            <div class="container">
+                <!-- Immagine del logo inserita all;interno di un link. Quando il logo viene cliccato
+                si viene reindirizzato verso la home page -->
+                <a href="index.html" id="logo">Logo</a>
+                <!-- ul = unordered list = list senza un ordine preciso  -->
+                <ul>
+                    <!-- ogni lista deve contenere elementi della lista <li> (list item)
+                    all'interno di cui inseriamo dei link che ci punteranno alle nostre varie pagine -->
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="chisono.html">Chi sono</a></li>
+                    <li class="nav-item"><a href="lavoro.html">Lavoro</a></li>
+                    <li class="nav-item"><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+        <!-- fine barra navigazione -->
+        </nav>
+        <!-- utilizziamo un id con class clear per annullare gli effetti del float sul logo e ul
+        Vedere il selettore .clear nel file style.css -->
+        <div class="clear"></div>
+        <!-- applichiamo le stesse regole CSS di container a questo div per avere
+        un altro container con le stesse dimensioni -->
+        <div class="container">
+            <h1>Il mio portoflio da web designer</h1>
+        </div>
+    </body>
+</html>
