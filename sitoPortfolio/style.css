@@ -45,3 +45,30 @@ nav ul {
     display: inline-block;
     margin: 0 15px;
 }
+
+/*zona banner superiore*/
+
+#top-section {
+    background: #18bb9c;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+#top-section h1{
+    margin-top: 0;
+}
+
+.bottoni-bianchi{
+    padding: 10px 15px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 10px 20px;
+}
+
+.bottoni-bianchi:hover{
+    background: #fff;
+    color: #18bb9c;
+    cursor: pointer;
+}
