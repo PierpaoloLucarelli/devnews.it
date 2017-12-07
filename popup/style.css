@@ -1,0 +1,35 @@
+body{
+	background: #2ecc71;
+}
+
+.popup{
+	width: 200px;
+	height: 400px;
+	background: #fefefe;
+	margin: 40px auto;
+	padding: 10px 20px;
+	position: relative;
+	color: #333;
+}
+
+.overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	display: none;
+}
+
+#close{
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	color: #fff;
+}
+
+#close:hover{
+	cursor: pointer;
+}
