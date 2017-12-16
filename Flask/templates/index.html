@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Una pagina HTML</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+</head>
+<body>
+	<h1>Ciao {{nome}}</h1>
+	<script type="text/javascript" src="{{ url_for('static',filename='app.js') }}"></script>
+</body>
+</html>
