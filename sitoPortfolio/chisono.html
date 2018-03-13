@@ -5,7 +5,7 @@
     titolo, font, e file CSS -->
     <head>
         <!-- titolo della pagina -->
-        <title>Portfolio Artista</title>
+        <title>Portfolio Artista | Chi sono</title>
         <!-- importiamo la fot 'Lato' da Google fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
         <!-- link al nostro file di stile. Path al file è dato da href -->
@@ -13,7 +13,6 @@
     </head>
     <!-- inizio corpo principale del sito -->
     <body>
-        <!-- tag di navigazione -->
         <nav>
             <!-- Utilizziamo container per centrare il nostro contenuto e per avere uno stacco dai bordi
             Vedere il selettore .container nel file style.css -->
@@ -33,51 +32,28 @@
             </div>
         <!-- fine barra navigazione -->
         </nav>
-        <!-- utilizziamo un id con class clear per annullare gli effetti del float sul logo e ul
-        Vedere il selettore .clear nel file style.css -->
-        <div class="clear"></div>
-        <!-- applichiamo le stesse regole CSS di container a questo div per avere
-        un altro container con le stesse dimensioni -->
-        <div id="top-section">
-            <div class="container">
-                <h1>Web Designer e Developer</h1>
-                <p>Ciao sono Paolo Rossi e sono un web designer italiano alle prime armi</p>
-                <p>Se hai un progetto con cui hai bisogno di aiuto contattami ora :)</p>
-                <button class="bottoni-bianchi">Contattami</button>
-                <button class="bottoni-bianchi">Vedi portfolio</button>
-            </div>
-        </div>
-        <!-- sezione skills -->
-        <div id='skills-section'>
-            <!-- solito container -->
-            <div class="container">
-                <img class="immagine-profilo" src="http://pages.stern.nyu.edu/~sbp345/websys/phonegap-facebook-plugin-master/src/android/facebook/FacebookLib/res/drawable/com_facebook_profile_picture_blank_square.png">
-                <h3>I miei servizi</h3>
-                <div id='skills'>
-                    <div class="skill">
-                        <h4>Web design</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                        </p>
-                    </div>
-                    <div class="skill">
-                        <h4>Web marketing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                        </p>
-                    </div>
-                    <div class="skill">
-                        <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                            aliqua.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <!-- contenuto va qui -->
+        <div class="container">
+	        <h1>Chi sono</h1>
+	        <img class="immagine-profilo" src="http://pages.stern.nyu.edu/~sbp345/websys/phonegap-facebook-plugin-master/src/android/facebook/FacebookLib/res/drawable/com_facebook_profile_picture_blank_square.png">
+	        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	        <div class="sinistro">
+	        	<h2>Cosa dicono i nostri clienti</h2>
+	        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+	        </div>
+	        <div class="destro">
+	        	<h2>Le ultime notizie</h2>
+	        	<img class="icone-notizia" src="">
+	        	<img class="icone-notizia" src="">
+	        	<img class="icone-notizia" src="">
+	        	<button>Scopri di più</button>
+	        </div>
+
+	    </div>
+        <!-- fine conenuto  -->
+
         <footer>
             <div class="container">
                 <div class="footer-section">

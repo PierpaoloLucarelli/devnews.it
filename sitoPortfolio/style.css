@@ -1,6 +1,7 @@
 /*Per riempire l'intera finesta del browser, togliamo qualsiasi tipo di marigne*/
 body{
     margin: 0;
+    background: #fefefe;
     font-family: 'Lato', sans-serif; /*specifichiamo quale font utilizzare*/
 }
 
@@ -23,6 +24,7 @@ nav{
     background: #2d3e50;
     color: #fff;
     height: 40px;
+    border-bottom: 5px solid #18bb9c;
 }
 
 #logo{
@@ -48,6 +50,12 @@ nav ul {
 
 /*zona banner superiore*/
 
+.immagine-profilo{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
 #top-section {
     background: #18bb9c;
     padding: 50px 0;
@@ -71,4 +79,70 @@ nav ul {
     background: #fff;
     color: #18bb9c;
     cursor: pointer;
+}
+
+/*Zona servizi offerti*/
+
+#skills-section{
+    text-align: center; /*contenuto centrato*/
+    margin-top: 50px; /*spazio superiore*/
+}
+
+/*titolo della skill*/
+#skills-section h3{
+    color: #18bb9c; /*colore*/
+    font-size: 2em; /*dimensione font*/
+}
+
+.skill{
+    /*larghezza dei div skill, in pagina ne abbiamo 3 quindi 100 / 3
+    lasciando un po' di spazio per i margini
+    */
+    width: 28%;
+    display: inline-block; /*questi div saranno posti uno a fianco all'altro*/
+    margin: 2%; /*un po di spazio tra i div*/
+    color: #5a5a5a;
+    margin-bottom: 80px;
+}
+
+.skill h4{
+    font-size: 1.2em;
+}
+
+/*FOOTER*/
+
+footer{
+    background: #2d3e50;
+    padding: 20px;
+    color: #fff;
+}
+
+footer p{
+    color: #18bb9c;
+}
+
+footer input[type=submit]{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background: #18bb9c;
+}
+
+footer input[type=text]{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-section{
+    display: inline-block;
+    width: 28%;
+    margin: 2%;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.social{
+    display: block;
+    color: #18bb9c;
 }
